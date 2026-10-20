@@ -9,7 +9,7 @@ I'm an electrical engineering student focused on **embedded systems, mechatronic
 
 Integrated radar-based gesture recognition into a larger embedded system using an Infineon PSoC 6 AI evaluation platform. My work included adapting the gesture-detection firmware to generate GPIO triggers and UART output for communication with other system components.
 
-[View the project →](https://github.com/firefly10000001/PSOC-Trigger1)
+[View the project →](https://github.com/firefly-haven/PSOC-Trigger1)
 
 ### Wearable Assistive Device
 **Embedded Systems · Computer Vision · Radar Sensing · Power Systems · CAD**
