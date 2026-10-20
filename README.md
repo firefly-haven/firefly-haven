@@ -1,57 +1,69 @@
-# Hi, I'm Jay 👋
+# Jay Kochhar
 
-I'm an electrical engineering student focused on **embedded systems, mechatronics, electronics design, and applied computing**. I enjoy building projects that cross the boundary between hardware and software—from microcontroller firmware and PCB design to sensing, computer vision, and embedded AI.
+**Electrical Engineering Student @ San Francisco State University** · B.S. expected **May 2029** · San Francisco Bay Area
 
-## Featured Projects
+I build and debug systems where **electronics, embedded firmware, and software meet**: sensor interfaces, PCB prototypes, edge-AI devices, and Linux-based hardware platforms. I enjoy taking projects from architecture and schematic design through bring-up, testing, and iteration.
 
-### 60 GHz Radar Gesture Recognition
-**PSoC 6 · Infineon XENSIV Radar · Embedded ML · C · UART/GPIO**
+**Seeking Summer 2027 internships** in embedded firmware, electrical/hardware engineering, hardware or silicon validation, robotics, and edge AI.
 
-Integrated radar-based gesture recognition into a larger embedded system using an Infineon PSoC 6 AI evaluation platform. My work included adapting the gesture-detection firmware to generate GPIO triggers and UART output for communication with other system components.
+[**Email**](mailto:jay.kochhar@gmail.com) · [**Portfolio**](https://firefly-haven.github.io/) · [**GitHub projects**](https://github.com/firefly-haven?tab=repositories)
 
-[View the project →](https://github.com/firefly-haven/PSOC-Trigger1)
+## Featured engineering work
 
-### Wearable Assistive Device
-**Embedded Systems · Computer Vision · Radar Sensing · Power Systems · CAD**
+### [60 GHz Radar Gesture Recognition — PSoC 6](https://github.com/firefly-haven/PSOC-Trigger1)
+**Embedded C · Infineon XENSIV BGT60TR13C · DEEPCRAFT · GPIO/UART**
 
-Worked on a five-person team developing a wearable facial-recognition system with radar-based gesture activation. I served as project manager while contributing to system architecture, gesture-recognition integration, CAD, and power-system design.
+- Adapted Infineon's PSoC 6 radar/embedded-ML example into a gesture-input subsystem for a larger assistive facial-recognition project.
+- Collected and labeled radar samples, **trained and deployed a custom swipe gesture**, and tested inference on physical hardware.
+- Implemented **GPIO triggers and UART event output** so gesture detections could be consumed by other devices.
 
-*Project documentation coming soon.*
+[My firmware and documentation](https://github.com/firefly-haven/PSOC-Trigger1) · [Full team project: Infineon-X](https://github.com/Infineon-X/infineon-x) · [Radar case study](https://firefly-haven.github.io/projects/radar-gesture.html)
 
-### Educational Electronics Hardware
-**Circuit Design · PCB Layout · Simulation · Prototyping**
+### [Lantern — Interactive Projection Appliance](https://github.com/firefly-haven/lantern)
+**Raspberry Pi 4 · MPU-6050 · Python/FastAPI · Svelte/TypeScript · Embedded Linux**
 
-Designed electronics for hands-on physics, chemistry, and circuit-analysis learning modules, including circuit simulation, component selection, PCB layout, fabrication, and supporting lesson material.
+- Built a local-first projector application with a fullscreen display, browser-based control UI, WebSocket updates, and systemd-based startup/recovery.
+- Brought up the IMU over I²C and verified **live accelerometer/gyroscope telemetry** on the Raspberry Pi and projector hardware.
+- **Prototype in progress:** automatic motion-triggered blanking and calibrated desk/wall/ceiling pose switching are not yet validated on hardware.
 
-*Project documentation coming soon.*
+### NVIDIA Jetson AGX Orin — Local AI & OCR
+**Jetson AGX Orin 32 GB · CUDA · Ollama · llama.cpp · Python · Linux**
 
-### Interactive Projection System
-**Raspberry Pi · IMU Sensing · Embedded Linux · Mechanical Design**
+- Built and tested a CUDA-enabled llama.cpp setup and benchmarked local inference, investigating **long-context performance, Flash Attention, KV-cache settings, and unified-memory limits**.
+- Connected local inference to an Obsidian OCR workflow with page-level transcription and visual quality checks.
+- *Systems/deployment project; standalone public write-up not yet available.*
 
-Building a compact interactive projection system inspired by the Android Things Lantern project, using a Raspberry Pi, IMU sensing, and a small projector mounted on an articulated arm.
+### Hardware Prototyping & PCB Fabrication
+**KiCad · Circuit simulation · PCB layout · Soldering · Test instrumentation**
 
-*Project documentation coming soon.*
+- Designed and prototyped instructional electronics modules, from component selection and PCB layout through fabrication, testing, and classroom materials.
+- Revised a workshop synthesizer PCB, evaluated milling/laser trace-isolation options, and **fabricated, assembled, and tested working boards** using toner transfer and wet etching.
+- Built a programmable peristaltic-pump prototype using an **ESP8266, stepper driver, and USB-C Power Delivery/buck-conversion hardware**.
 
-## What I Work With
+### Raspberry Pi Compute & Storage Cluster
+**Six CM4 nodes · NVMe · Ceph/CephFS · Samba · Docker · Linux networking**
 
-**Embedded & Electronics**  
-C/C++ · Microcontrollers · PSoC · Raspberry Pi · Circuit Analysis · PCB Design · Sensors · UART · SPI · I²C
+- Built a six-node Raspberry Pi CM4/NVMe cluster, configured distributed storage for single-node failure tolerance, and deployed shared storage and containerized services.
+- Worked through real-world Linux administration, storage, networking, and failure-recovery considerations.
 
-**Software & Computing**  
-Python · Linux · Git · Docker · Embedded Linux · Local AI/ML workflows
+## Engineering experience
 
-**Design & Fabrication**  
-CAD · 3D Printing · CNC Machining · Laser Cutting · Electronics Prototyping
+**Krause Center for Innovation (KCI) — Makerspace Staff** · April 2025–present
 
-## Current Interests
+Design and prototype electronics learning modules; troubleshoot hardware and fabrication equipment; develop and co-facilitate hands-on training for K–12 educators in circuits, soldering, CAD, and digital fabrication.
 
-- Embedded systems and firmware
-- Mechatronics and robotics
-- Sensor fusion and intelligent sensing
-- PCB and electronic system design
-- Edge AI and computer vision
-- Rapid prototyping and digital fabrication
+Previously held customer-facing technical and team-leadership roles at **Best Buy** and as a **Samsung Experience Consultant through 2020 Companies**.
 
-## GitHub
+## Technical toolkit
 
-This profile is a work in progress as I document and publish more of my engineering projects. Each featured repository is intended to include not only source code, but also the design decisions, system architecture, testing, and lessons learned behind the project.
+| Area | Tools and experience |
+| --- | --- |
+| **Embedded hardware** | PSoC 6, STM32 (C/ARM assembly), ESP32/ESP8266, Raspberry Pi, Jetson AGX Orin; GPIO, UART, I²C, sensor and motor interfaces |
+| **Electronics & validation** | KiCad, schematic capture, PCB layout/fabrication, circuit simulation, soldering, DMM, oscilloscope, logic-analyzer debugging |
+| **Programming & systems** | C, C++, Python, Linux, Git, Docker, FastAPI, Ceph, Proxmox, networking, Ollama, llama.cpp |
+| **Digital design** | Combinational/sequential logic, FSMs, registers, datapaths, and Xilinx ISE simulation **(coursework in progress)** |
+| **CAD & fabrication** | Parametric CAD, FDM/SLA 3D printing, CO₂/diode/fiber laser fabrication, CNC machining and CAM |
+
+**Current focus:** microelectronics and digital design coursework, STM32 firmware, sensor-rich embedded devices, and practical validation of edge-AI systems.
+
+I'm particularly interested in internships where I can contribute to **board bring-up, firmware, test automation, and hardware/software integration**, while continuing to learn from experienced engineers.
